@@ -1,0 +1,429 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="FrontMasterPage.master.cs" Inherits="FrontMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<he    <!-- Basic Page Needs
+  ================================================== -->
+    <meta charset="utf-8">
+    <title>Welcome to Fabricare Laundry</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Font
+  ================================================== -->
+  
+    <link rel="stylesheet" href="../../cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="http://localhost:54977/front-assets/css/font-awesome.min.css">
+    <!-- CSS
+  ================================================== -->
+    <link rel="stylesheet" href="http://localhost:54977/front-assets/css/bootstrap.min.css"/>
+  <!-- SELECTBOX
+  ================================================== -->
+  <link rel="stylesheet" type="text/css" href="http://localhost:54977/front-assets/css/fancySelect.css" media="screen" /> 
+  <!-- SLIDER REVOLUTION 4.x SCRIPTS
+  ================================================== --> 
+  <link rel="stylesheet" type="text/css" href="http://localhost:54977/front-assets/css/extralayers.css" media="screen" /> 
+  <link rel="stylesheet" type="text/css" href="/front-assets/rs-plugin/css/settings.css" media="screen" />
+  <!-- OWL CAROUSEL
+  ================================================== --> 
+  <link rel="stylesheet" href="http://localhost:54977/front-assets/css/owl.carousel.css">
+  <link rel="stylesheet" href="http://localhost:54977/front-assets/css/owl.theme.default.css">
+   <!-- Progress Bar
+  ================================================== --> 
+  <link rel="stylesheet" href="http://localhost:54977/front-assets/css/bootstrap-progressbar-3.3.4.min.css">
+  <!-- SCROLL BAR MOBILE MENU
+  ================================================== --> 
+  <link rel="stylesheet" href="http://localhost:54977/front-assets/css/jquery.mCustomScrollbar.css" />
+  <!-- MAIN STYLE
+  ================================================== -->
+  <link rel="stylesheet" href="http://localhost:54977/front-assets/style.css"/>
+  <!-- color scheme -->
+  <link rel="stylesheet" href="http://localhost:54977/front-assets/switcher/demo.css" type="text/css">
+  <link rel="stylesheet" href="http://localhost:54977/front-assets/switcher/colors/index.html" type="text/css" id="colors">   
+    
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="front-assets/favicon.png">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="mobile-menu-first">
+        <div id="mobile-menu-right" class="mobile-menu-dark">
+          <div class="mCustomScrollbar light" data-mcs-theme="minimal-dark">
+               <div class="header-mobile-menu hmm-v1">
+                  <a class="has-icon" href="999-224-4884"><span class="lnr lnr-phone-handset icon-set-1 icon-xs"></span> <span class="sub-text-icon text-middle">999-224-4884</span></a>
+                <a href="#" class="ot-btn btn-rounded btn-hightlight-color">Get A Quote</a>
+              </div> <!-- End header mobile menu -->
+              <ul>
+                  <li>
+                          <a href="http://fabricarelaundry.com/Home"><i class="icon-home"></i> Home</a>
+                         <%-- <ul>
+                               <li><a href="index.html">Home Page Verison 1</a></li>
+                                <li><a href="home_2.html">Home Page Verison 2</a></li>
+                                <li><a href="home_3.html">Home Page Verison 3</a></li>
+                                <li><a href="home_4.html">Home Page Verison 4</a></li>
+                                <li><a href="home_5.html">Home Page Verison 5</a></li>
+<li><a href="home_6.html">Home Page Verison 6</a></li>
+                          </ul>--%>
+                  </li>                
+                 
+                  <li><a href="http://fabricarelaundry.com/Services">Services</a>
+                    <%--  <ul>
+                          <li><a href="servicesList.html">Services Style 1</a></li>
+                          <li><a href="servicesList2.html">Services Style 2</a></li>
+                          <li><a href="services-detail.html">Services Details</a></li>
+                      </ul>--%>
+                  </li>
+                 <%-- <li><a href="projectList.html">Projects</a>
+                     <ul>
+                        <li><a href="projectList.html">Project Grid</a></li>
+                        <li><a href="projectsDetail.html">Project Details</a></li>
+                    </ul>
+                  </li>--%>
+                  <li><a href="http://fabricarelaundry.com/Blogs">Blogs</a>
+                      <%-- <ul>
+                          <li><a href="blogList.html">Blog List</a></li>
+                          <li><a href="blogDetail.html">Blog Detail</a></li>                                    
+                      </ul>--%>
+                  </li>
+                 <%-- <li><a href="shop-catalog.html">Shop</a>
+                        <ul>
+                            <li><a href="shop-catalog.html">Online Store Catalog</a></li>
+                            <li><a href="shop-cart.html">Online Store Shopping Cart</a></li>
+                            <li><a href="shop-checkout.html">Online Store Checkout</a></li>
+                            <li><a href="shop-single.html">Single Store Product</a></li>
+                        </ul>
+                  </li>
+                  <li><a href="#">Pages</a>
+                      <ul>
+                          <li><a href="elements.html">Element</a></li>
+                          <li><a href="typography.html">Typography</a></li>
+                          <li><a href="testimonial.html">Testinmonials</a>
+                          <li><a href="404.html">404 Page</a></li>
+                          <li><a href="comingsoon.html">Coming Soon</a></li>      
+                      </ul>
+                  </li>
+                  <li><a href="about.html">About Us </a></li>--%>
+                  <li ID="dashboardmobile" runat="server" visible="false"><a href="admin/dashboard.aspx">Dashboard </a></li>
+                   <li><a href="http://fabricarelaundry.com/Pricing">Pricing </a>
+                     <%-- <ul>
+                          <li><a href="contact.html">Contact Style 1</a></li>
+                          <li><a href="contact2.html">Contact Style 2</a></li>
+                          <li><a href="contact3.html">Contact Style 3</a></li>    
+                      </ul>--%>
+                  </li>
+                  <li><a href="http://fabricarelaundry.com/Contact-us">Contact Us </a>
+                     <%-- <ul>
+                          <li><a href="contact.html">Contact Style 1</a></li>
+                          <li><a href="contact2.html">Contact Style 2</a></li>
+                          <li><a href="contact3.html">Contact Style 3</a></li>    
+                      </ul>--%>
+                  </li>
+                  <li><a href="http://fabricarelaundry.com/Faqs">Faqs </a>
+                      </li>
+                  <li><a href="http://fabricarelaundry.com/Hospital-Services">Hospital Services</a>
+                      </li>
+                   <li ID="loginmobile" runat="server" visible="true"><a href="http://fabricarelaundry.com/Login">Login </a>
+                     <%-- <ul>
+                          <li><a href="branchInquiry.html">As a Branch</a></li>
+                          <li><a href="contact2.html">As a User</a></li>
+                          <%--<li><a href="contact3.html">Contact Style 3</a></li>    --%>
+                      <%--</ul>--%>
+                  </li>
+                  <li ID="registrationmobile" runat="server" visible="true"><a href="#">Register </a>
+                      <ul>
+                          <li><a href="http://fabricarelaundry.com/Branch-Register">As a Branch</a></li>
+                          <li><a href="http://fabricarelaundry.com/Register">As a User</a></li>
+                          <%--<li><a href="contact3.html">Contact Style 3</a></li>    --%>
+                      </ul>
+                  </li>
+                   <li ID="mobile_profile" runat="server" visible="false"> <asp:Image ID="mobileProfile" runat="server" width="30"
+                                                     height="30" alt="" class="img-circle" style="margin-top: -8px;"/>
+                                                <ul class="navi-level-2" >
+                                               <li><asp:Label ID="mobileName" runat="server" Text="Guest" style="font-size:15px;color:white;padding:15px"></asp:Label></li>
+                                                <li  ID="mobileProfileRoute" runat="server" visible="false"><a href="http://fabricarelaundry.com/Profile">Profile</a></li>
+                                                   <%-- <li  ID="Li1" runat="server" visible="true"><a href="http://localhost:55500/Applied-Jobs">Applied Jobs</a></li>--%>
+                                                <li>
+                                                    <asp:LinkButton ID="Logout2" runat="server" OnClick="logout_button_Click" >Logout</asp:LinkButton> 
+                                                    </li>
+                                                    </ul>                     
+                                              </li>
+              </ul>
+              <div class="footer-mobile-menu fmm-v1">
+                  <ul class="social">
+                      <li class="facebook"><a href="https://www.facebook.com/FabricareHr"><i class="fa fa-facebook"></i></a></li>
+                      <li class="twitter"><a href="https://twitter.com/fabricarehr"><i class="fa fa-twitter"></i></a></li>
+                      <li class="twitter"><a href="https://www.instagram.com/fabricarehr/"><i class="fa fa-instagram"></i></a></li>
+                      <%--<li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                      <li class="youtube"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                      <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>--%>
+                  </ul>
+                  <ul class="address-footer-mobile">
+                    
+                    <li><a href="#"><span class="lnr lnr-map-marker"></span> Plot No.225, Shanti Kunj Colony, kaimri Road, Hisar ,Haryana(125001)</a></li>
+                    <li><a href="# "><span class="lnr lnr-smartphone"></span> 999-224-4884 </a></li>
+                    <li><a href="mailto:fabricarelaundryhr@gmail.com"><span class="lnr lnr-envelope"></span> fabricarelaundryhr@gmail.com</a></li>
+                    
+                  </ul>
+              </div><!-- End footer mobile menu -->
+          </div>
+        </div> <!-- /#rmm   -->
+    </div><!-- End Mobile Menu -->
+  <div id="page">
+    <div class="top-bar top-bar-dark">
+      <div class="container">
+        <div class="left-top-bar left-top-bar-long">
+              <p class="hidden-xs" ><span class="lnr lnr-map-marker large-lnr"></span> Plot No.225, Shanti Kunj Colony, kaimri Road, Hisar ,Haryana(125001)</p>
+               <p class="hidden-xs"><span class="lnr lnr-smartphone large-lnr"></span> 999-224-4884 </p>
+                <p class="hidden-xs"><span class="lnr lnr-envelope large-lnr"></span> fabricarelaundryhr@gmail.com</p>
+                <div class="popover-container visible-xs">
+                    <button type="button" class="btn btn-popover popover-dark" data-container="body" data-toggle="popover" data-placement="bottom" title="0112-826-2789" data-content="contact@site.com">
+                        <span class="lnr lnr-phone-handset"></span>
+                      </button>
+                       <button type="button" class="btn btn-popover popover-dark" data-container="body" data-toggle="popover" data-placement="bottom" title="8th floor, 379 Hudson St" data-content="New York, NY 10018">
+                        <span class="lnr lnr-map-marker"></span>
+                      </button>
+                      <button type="button" class="btn btn-popover popover-dark" data-container="body" data-toggle="popover" data-placement="bottom" title="07:30 am – 06:00 pm" data-content="Every Day">
+                        <span class="lnr lnr lnr-clock"></span>
+                      </button>
+                </div>
+        </div> <!-- End left top bar -->
+        <div class="right-top-bar">
+            <ul class="social">
+                <li class="facebook"><a href="https://www.facebook.com/FabricareHr"><i class="fa fa-facebook" style="padding-top: 7px;"></i></a></li>
+                <li class="twitter"><a href="https://twitter.com/fabricarehr"><i class="fa fa-twitter" style="padding-top: 7px;"></i></a></li>
+                <li class="instagram"><a href="https://www.instagram.com/fabricarehr/"><i class="fa fa-instagram"  style="padding-top: 7px;"></i></a></li>
+                <%--<li class="google-plus"><a href="#"><i class="fa fa-google-plus" style="padding-top: 7px;"></i></a></li>
+                <li class="youtube"><a href="#"><i class="fa fa-youtube-play" style="padding-top: 7px;"></i></a></li>
+                <li class="linkedin"><a href="#"><i class="fa fa-linkedin" style="padding-top: 7px;"></i></a></li>--%>
+            </ul>
+        </div><!-- End right top bar -->
+      </div> <!-- End container -->
+    </div> <!-- End top bar -->
+    
+    <header id="sticked-menu" class="header header-v5">
+      <div class="container">
+        <div class="logo">
+            <div class="mm-toggle visible-xs visible-sm">
+              <i class="fa-remove fa fa-bars"></i><span class="mm-label">Menu</span>
+            </div>
+            <a href="index.aspx"><img src="http://localhost:54977/front-assets/images/logo-fabricare.png" class="img-responsive" alt="Image"></a>
+        </div>
+        <nav class="navi-desktop-site hidden-sm hidden-xs">
+                 	<ul class="navi-level-1 uppercase">
+                        <li class="has-sub"><a href="http://fabricarelaundry.com/Home">Home<%-- <i class="fa fa-angle-down"></i>--%></a>
+                             <%--<ul class="navi-level-2 ">
+                                <li><a href="index.html">Home Page Verison 1</a></li>
+                                <li><a href="home_2.html">Home Page Verison 2</a></li>
+                                <li><a href="home_3.html">Home Page Verison 3</a></li>
+                                <li><a href="home_4.html">Home Page Verison 4</a></li>
+                                <li><a href="home_5.html">Home Page Verison 5</a></li>
+<li><a href="home_6.html">Home Page Verison 6</a></li>
+                            </ul>--%>
+                        </li>
+                        <li class="has-sub"><a href="http://fabricarelaundry.com/Services">Services<%-- <i class="fa fa-angle-down"></i>--%></a>
+                            <%--<ul class="navi-level-2">
+                                <li><a href="servicesList.html">Services Style 1</a></li>
+                                <li><a href="servicesList2.html">Services Style 2</a></li>
+                                <li><a href="services-detail.html">Services Details</a></li>
+                            </ul>--%>
+                        </li>
+                        <%--<li class="has-sub"><a href="projectList.html">Projects  <i class="fa fa-angle-down"></i></a>
+                               <ul class="navi-level-2">
+                                    <li><a href="projectList.html">Project Grid</a></li>
+                                    <li><a href="projectsDetail.html">Project Details</a></li>
+                                </ul>
+                        </li>--%>
+                        <li class="has-sub"><a href="http://fabricarelaundry.com/Blogs">Blog<%--<i class="fa fa-angle-down"></i>--%></a>
+                             <%--<ul class="navi-level-2">
+                                <li><a href="blogList.html">Blog List</a></li>
+                                <li><a href="blogDetail.html">Blog Detail</a></li>                                    
+                            </ul>--%>
+                        </li>
+                      <%--  <li class="has-sub"><a href="shop-catalog.html">Shop<i class="fa fa-angle-down"></i></a>
+                              <ul class="navi-level-2">
+                                  <li><a href="shop-catalog.html">Online Store Catalog</a></li>
+                                  <li><a href="shop-cart.html">Online Store Shopping Cart</a></li>
+                                  <li><a href="shop-checkout.html">Online Store Checkout</a></li>
+                                  <li><a href="shop-single.html">Single Store Product</a></li>
+                              </ul>
+                        </li>
+                        <li class="has-sub"><a href="#">Pages  <i class="fa fa-angle-down"></i></a>
+                      
+                          <ul class="navi-level-2">
+                              <li><a href="elements.html">Element</a></li>
+                              <li><a href="typography.html">Typography</a></li>
+                              <li><a href="testimonial.html">Testinmonials</a>
+                              <li><a href="404.html">404 Page</a></li>
+                              <li><a href="comingsoon.html">Coming Soon</a></li>                                      
+                          </ul>
+                        </li>--%>
+                       <%-- <li><a href="about.html">About Us  </a></li>--%>
+                         <li ID="dashboard" runat="server" visible="false"><a href="admin/dashboard.aspx">Dashboard </a></li>
+                         <li class="has-sub"><a href="http://fabricarelaundry.com/Pricing">Pricing<%--  <i class="fa fa-angle-down"></i>--%></a>
+                         <%-- <ul class="navi-level-2">
+                              <li><a href="contact.html">Contact Style 1</a></li>
+                              <li><a href="contact2.html">Contact Style 2</a></li>
+                              <li><a href="contact3.html">Contact Style 3</a></li>                                    
+                          </ul>--%>
+                        </li>
+                        <li><a href="http://fabricarelaundry.com/Contact-us">Contact Us<%--  <i class="fa fa-angle-down"></i>--%></a>
+                         <%-- <ul class="navi-level-2">
+                              <li><a href="contact.html">Contact Style 1</a></li>
+                              <li><a href="contact2.html">Contact Style 2</a></li>
+                              <li><a href="contact3.html">Contact Style 3</a></li>                                    
+                          </ul>--%>
+                        </li>
+                         <li><a href="http://fabricarelaundry.com/Faqs">Faqs<%--  <i class="fa fa-angle-down"></i>--%></a>
+
+                         <%-- <ul class="navi-level-2">
+                              <li><a href="contact.html">Contact Style 1</a></li>
+                              <li><a href="contact2.html">Contact Style 2</a></li>
+                              <li><a href="contact3.html">Contact Style 3</a></li>                                    
+                          </ul>--%>
+                        </li>
+                          <li><a href="http://fabricarelaundry.com/Hospital-Services">Hospital Services</a>
+                      </li>
+                       <li  class="has-sub" ID="login" runat="server" visible="true"><a href="http://fabricarelaundry.com/Login">Login </a>
+                     <%-- <ul>
+                          <li><a href="branchInquiry.html">As a Branch</a></li>
+                          <li><a href="contact2.html">As a User</a></li>
+                          <%--<li><a href="contact3.html">Contact Style 3</a></li>    --%>
+                      <%--</ul>--%>
+                  </li>
+                  <li class="has-sub" ID="registration" runat="server" visible="true">Register<i class="fa fa-angle-down"></i> 
+                      <ul class="navi-level-2" >
+                          <li><a href="http://fabricarelaundry.com/Branch-Register">As a Branch</a></li>
+                          <li><a href="http://fabricarelaundry.com/Register">As a User</a></li>
+                          <%--<li><a href="contact3.html">Contact Style 3</a></li>    --%>
+                      </ul>
+                  </li> 
+                         <li ID="logout" runat="server" visible="false"> <asp:Image ID="profile_image" runat="server" width="30"
+                                                     height="30" alt="" class="img-circle" style="margin-top: -8px;"/>
+                                                <ul class="navi-level-2" >
+                                               <li><asp:Label ID="user_name" runat="server" Text="Guest" style="font-size:15px;color:white;padding:15px"></asp:Label></li>
+                                                <li  ID="profile" runat="server" visible="false"><a href="http://fabricarelaundry.com/Profile">Profile</a></li>
+                                                   <%-- <li  ID="Li1" runat="server" visible="true"><a href="http://localhost:55500/Applied-Jobs">Applied Jobs</a></li>--%>
+                                                <li>
+                                                    <asp:LinkButton ID="logout_button" runat="server" OnClick="logout_button_Click" >Logout</asp:LinkButton> 
+                                                    </li>
+                                                    </ul>                     
+                                              </li>
+                  	</ul>
+        </nav>
+      </div> <!-- End container -->
+    </header><!-- END HEADER -->
+            
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+           <!-- Footer --> 
+    <footer class=" bg-dark footer">
+            <div class="container">
+              <div class="row">
+                <div class="footer-row">
+                  
+                    <div class="footer-col-1">
+                        <a href="index.html"><img src="front-assets/images/logo-fabricare.png" class="img-responsive" alt="Image" style="background-color: white"></a>                    
+                        <ul class="clearfix">
+                            <li><a href="http://fabricarelaundry.com/Home">Home</a></li>
+                          <li><a href="http://fabricarelaundry.com/Blogs">Blogs</a></li>
+                          <li><a href="http://fabricarelaundry.com/Services">Services</a></li>
+                          <li><a href="http://fabricarelaundry.com/Pricing">Pricing</a></li> 
+                            <li><a href="http://fabricarelaundry.com/Contact-us">Contact Us</a></li> 
+                            <li><a href="http://fabricarelaundry.com/Faqs">Faqs</a></li> 
+                            <li><a href="http://fabricarelaundry.com/Login">Login</a></li> 
+                            <li><a href="http://fabricarelaundry.com/Register">Register</a></li> 
+                        </ul>
+                      </div>
+                  
+                  
+                    <div class="footer-col-2">
+                      <h3 class="text-white">Contact us</h3>
+                      <div class="border-2-side">
+                        <p>Plot No.223, Shanti Kunj Colony, kaimri Road, Hisar ,Haryana(125001)</p>
+                        <p><span >999-224-4884</span></p>
+                        <p><span >fabricarelaundryhr@gmail.com</span></p>
+                      </div>
+                    </div>
+               
+               
+                    <div class="footer-col-3">
+                          <h3 class="text-white">Follow us</h3> 
+                          <ul class="social social-footer">
+                            <li class="facebook"><a href="https://www.facebook.com/FabricareHr"><i class="fa fa-facebook" style="padding-top:12px"></i></a></li>
+                            <li class="twitter"><a href="https://twitter.com/fabricarehr"><i class="fa fa-twitter" style="padding-top:12px"></i></a></li>
+                              <li class="instagram"><a href="https://www.instagram.com/fabricarehr/"><i class="fa fa-instagram"  style="padding-top:12px;"></i></a></li>
+                           <%-- <li class="google-plus"><a href="#"><i class="fa fa-google-plus" style="padding-top:12px"></i></a></li>
+                            <li class="youtube"><a href="#"><i class="fa fa-youtube-play" style="padding-top:12px"></i></a></li>
+                            <li class="linkedin"><a href="#"><i class="fa fa-linkedin" style="padding-top:12px"></i></a></li>--%>
+                          </ul>
+                    </div>
+              
+                </div> <!-- End footer row -->
+                <div class="col-md-12 footer-link">
+                  <p>Copyright © 2023 Designed by <a href="http://omtechnoware.com">Om Technoware.</a> All rights reserved.</p>
+                  <ul>
+                    <li><a href="http://fabricarelaundry.com/AboutUs">About </a></li>
+                    <li><a href="http://fabricarelaundry.com/Contact-us">Contact Us </a></li>
+                    <li><a href="http://fabricarelaundry.com/TermsAndConditions">Term & Conditions</a></li>
+                    <li><a href="#">Privacy Policy </a></li>
+                    <li><a href="#">Sites Map</a></li>
+                  </ul>
+                </div>
+              </div><!-- End Row -->
+
+            </div><!-- End container -->
+    </footer><!-- End  -->
+  </div> <!-- End Page -->
+    <a id="to-the-top" style="display: block;"><i class="fa fa-angle-up"></i></a> <!-- Back To Top -->
+     <!-- SCRIPT
+    ================================================== -->
+    <script src="front-assets/js/vendor/jquery.min.js"></script>
+    <script src="front-assets/js/plugins/jpreLoader.js"></script>
+    <script src="front-assets/js/plugins/jquery.waypoints.min.js"></script>
+    <script src="front-assets/js/vendor/bootstrap.min.js"></script>
+    <script src="front-assets/js/plugins/easing.js"></script>
+    <script src="front-assets/js/plugins/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="front-assets/js/plugins/fancySelect.js"></script>
+    <script src="front-assets/js/plugins/custom.js"></script>
+    <!-- Switcher
+    ================================================== -->
+    <script src="front-assets/switcher/demo.js"></script>
+    <!-- Mobile Menu
+    ================================================== --> 
+     <script src="front-assets/js/plugins/jquery.mobile-menu.js"></script>  
+     <script src="front-assets/js/plugins/sticky.min.js"></script>
+    <!-- Revo Lib
+    ================================================== --> 
+    <script type="text/javascript" src="front-assets/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="front-assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- Custom Revoslider -->
+    <script src="front-assets/js/plugins/revoslider-custom.js"></script>
+    <!-- Counter Up
+    ================================================== -->
+    <script src="front-assets/js/plugins/jquery.animateNumber.min.js"></script>
+    <script src="front-assets/js/plugins/custom-counterup.js"></script>
+    <!-- Initializing the isotope
+    ================================================== --> 
+    <script src="front-assets/js/plugins/isotope.pkgd.min.js"></script>
+    <script src="front-assets/js/plugins/custom-isotope.js"></script>
+    <!-- Initializing Owl Carousel
+    ================================================== -->
+    <script src="front-assets/js/plugins/owl.carousel.js"></script>
+    <script src="front-assets/js/plugins/custom-owl.js"></script>
+    <!-- Progress Bar Chart
+    ================================================== -->
+    <script src="front-assets/js/plugins/bootstrap-progressbar.min.js"></script>
+    <script src="front-assets/js/plugins/custom-progressbar.js"></script>
+    </form>
+
+</body>
+</html>
